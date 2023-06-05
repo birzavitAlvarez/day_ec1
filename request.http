@@ -1,0 +1,13 @@
+POST http://localhost:8080/ws
+Content-Type: text/xml
+
+<soapenv:Envelope 
+xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
+xmlns:gs="http://spring.io/guides/gs-producing-web-service">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <gs:getDiaRequest>
+         <gs:name>lunes</gs:name>
+      </gs:getDiaRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
