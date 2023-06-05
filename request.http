@@ -1,4 +1,4 @@
-POST http://localhost:8080/ws
+POST http://localhost:8080/webservice1
 Content-Type: text/xml
 
 <soapenv:Envelope 
