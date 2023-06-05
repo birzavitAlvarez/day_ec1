@@ -7,7 +7,7 @@ xmlns:gs="http://spring.io/guides/gs-producing-web-service">
    <soapenv:Header/>
    <soapenv:Body>
       <gs:getDiaRequest>
-         <gs:name>lunes</gs:name>
+         <gs:name>martes</gs:name>
       </gs:getDiaRequest>
    </soapenv:Body>
 </soapenv:Envelope>

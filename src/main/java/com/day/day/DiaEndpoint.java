@@ -23,7 +23,7 @@ public class DiaEndpoint {
 
 	@PayloadRoot(namespace = NAMESPACE_URI, localPart = "getDiaRequest")
 	@ResponsePayload
-	public GetDiaResponse getCountry(@RequestPayload GetDiaRequest request) {
+	public GetDiaResponse getDia(@RequestPayload GetDiaRequest request) {
 		GetDiaResponse response = new GetDiaResponse();
 		response.setDia(diaRepository.findDia(request.getName()));
 

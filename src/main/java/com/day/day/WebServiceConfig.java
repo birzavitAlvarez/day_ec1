@@ -24,13 +24,13 @@ public class WebServiceConfig extends WsConfigurerAdapter {
 	}
 
 	@Bean(name = "countries")
-	public DefaultWsdl11Definition defaultWsdl11Definition(XsdSchema diasSchema) {
-		DefaultWsdl11Definition wsdl11Definition = new DefaultWsdl11Definition();
-		wsdl11Definition.setPortTypeName("DiasPort");
-		wsdl11Definition.setLocationUri("/ws");
-		wsdl11Definition.setTargetNamespace("http://spring.io/guides/gs-producing-web-service");
-		wsdl11Definition.setSchema(diasSchema);
-		return wsdl11Definition;
+	public DefaultWsdl11Definition  defaultWsdl11Definition(XsdSchema diasSchema) {
+		DefaultWsdl11Definition ddiaDefinition = new DefaultWsdl11Definition();
+		ddiaDefinition.setPortTypeName("DiasPort");
+		ddiaDefinition.setLocationUri("/ws");
+		ddiaDefinition.setTargetNamespace("http://spring.io/guides/gs-producing-web-service");
+		ddiaDefinition.setSchema(diasSchema);
+		return ddiaDefinition;
 	}
 
 	@Bean
